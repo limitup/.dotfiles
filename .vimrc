@@ -7,6 +7,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 
 " ======== Options ========
+syntax enable
+set background=dark
 set number
 set ruler
 set ts=4
