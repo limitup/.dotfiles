@@ -5,6 +5,13 @@ filetype off                  " required
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 
+
+" ======== Options ========
+set number
+set ruler
+set ts=4
+
+
 " ======== Plugins ========
 " Keep Plugin commands between vundle#begin/end.
 call vundle#begin()         " required
