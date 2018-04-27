@@ -24,11 +24,19 @@ call vundle#begin()         " required
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+
+"Plugin 'christoomey/vim-tmux-navigator'
+
+Plugin 'scrooloose/nerdtree'
+let NERDTreeIgnore=['\.pyc', '\.o', '\.class', '\.lo',"elm-stuff","elm.js"]
+map <silent> <LocalLeader>nt :NERDTreeToggle<CR>
+
+Plugin 'kien/ctrlp.vim'
+map <silent> <leader>ff :CtrlP<CR>
 
 
 " The following are examples of different formats supported.
@@ -55,22 +63,11 @@ Plugin 'vim-airline/vim-airline-themes'
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
 
-
-
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
-
-
-
-" ======== Plugin Settings ========
-" 'scrooloose/nerdtree'
-let NERDTreeIgnore=['\.pyc', '\.o', '\.class', '\.lo',"elm-stuff","elm.js"]
-map <silent> <LocalLeader>nt :NERDTreeToggle<CR>
-
-
 
 " ======== Brief help ========
 " :PluginList       - lists configured plugins
