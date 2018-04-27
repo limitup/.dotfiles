@@ -12,6 +12,7 @@ set background=dark
 set number
 set ruler
 set ts=4
+set showmatch
 
 
 " ======== Plugins ========
