@@ -29,7 +29,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-
+Plugin 'jiangmiao/auto-pairs'
 "Plugin 'christoomey/vim-tmux-navigator'
 
 Plugin 'scrooloose/nerdtree'
