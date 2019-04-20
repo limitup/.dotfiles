@@ -1,30 +1,20 @@
 " ======== Setup ========
 set nocompatible              " be iMproved, required
 filetype off                  " required
+syntax enable
+set encoding=utf-8
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
-
-
-" ======== Options ========
-syntax enable
-set background=dark
-set number
-set ruler
-set ts=4
-set showmatch
-
 
 " ======== Plugins ========
 " Keep Plugin commands between vundle#begin/end.
 call vundle#begin()         " required
 
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+
+" VIM Plugins
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
@@ -39,34 +29,10 @@ map <silent> <LocalLeader>nt :NERDTreeToggle<CR>
 Plugin 'kien/ctrlp.vim'
 map <silent> <leader>ff :CtrlP<CR>
 
-
-" The following are examples of different formats supported.
-" ----------------------------------------------------------
-
-" plugin on GitHub repo
-"Plugin 'tpope/vim-fugitive'
-
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-
-" Git plugin not hosted on GitHub
-"Plugin 'git://git.wincent.com/command-t.git'
-
-" git repos on your local machine (i.e. when working on your own plugin)
-"Plugin 'file:///home/gmarik/path/to/plugin'
-
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-
-" Install L9 and avoid a Naming conflict if you've already installed a
-" different version somewhere else.
-" Plugin 'ascenator/L9', {'name': 'newL9'}
-
-
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 
@@ -78,3 +44,18 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+" Linenumbers
+set number
+set ruler
+
+" Tabs
+set autoindent
+set shiftwidth=4
+set smartindent
+set smarttab
+set tabstop=4
+
+" Theme
+set background=dark
+set showmatch
