@@ -31,10 +31,9 @@ map <silent> <leader>ff :CtrlP<CR>
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin indent on    " required
 
 " To ignore plugin indent changes, instead use:
-"filetype plugin on
+filetype plugin on
 
 " ======== Brief help ========
 " :PluginList       - lists configured plugins
@@ -58,4 +57,6 @@ set tabstop=4
 
 " Theme
 set background=dark
+
 set showmatch
+
