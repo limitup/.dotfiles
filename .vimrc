@@ -49,10 +49,10 @@ set number
 set ruler
 
 " Tabs
-set autoindent
+" set autoindent
 set shiftwidth=4
-set smartindent
-set smarttab
+" set smartindent
+" set smarttab
 set tabstop=4
 
 " Theme
