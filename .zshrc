@@ -100,3 +100,6 @@ source $ZSH/oh-my-zsh.sh
 if which direnv > /dev/null; then
  eval "$(direnv hook zsh)";
 fi
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/terraform terraform
