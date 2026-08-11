@@ -17,16 +17,16 @@ Plugin 'VundleVim/Vundle.vim'
 " VIM Plugins
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'jiangmiao/auto-pairs'
-"Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'christoomey/vim-tmux-navigator'
 
-Plugin 'scrooloose/nerdtree'
+Plugin 'preservim/nerdtree'
 let NERDTreeIgnore=['\.pyc', '\.o', '\.class', '\.lo',"elm-stuff","elm.js"]
 map <silent> <LocalLeader>nt :NERDTreeToggle<CR>
 
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 map <silent> <leader>ff :CtrlP<CR>
 
 " All of your Plugins must be added before the following line
