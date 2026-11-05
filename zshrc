@@ -103,4 +103,6 @@ if command -v direnv > /dev/null 2>&1; then
 fi
 
 autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/bin/terraform terraform
+if command -v terraform > /dev/null 2>&1; then
+ complete -o nospace -C "$(command -v terraform)" terraform
+fi
